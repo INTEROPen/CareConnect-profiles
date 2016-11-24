@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2016-10-25T00:58:29.47+01:00" />
+    <lastUpdated value="2016-11-24T21:27:03.718+00:00" />
   </meta>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
     <valueInteger value="1" />
   </extension>
-  <url value="http://hl7.org.uk/CareConnect-Observation-1" />
+  <url value="http://hl7.org.uk/CareConnect-Observation-1.structuredefinition.xml" />
   <name value="CareConnect-Observation-1" />
   <status value="draft" />
   <publisher value="HL7 UK" />
@@ -3099,8 +3099,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="http://hl7.org.uk/CareConnect-Patient-1" />
-        <aggregation value="referenced" />
+        <profile value="http://hl7.org.uk/CareConnect-Patient-1.structuredefinition.xml" />
       </type>
       <isSummary value="true" />
       <mapping>
@@ -3303,12 +3302,11 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
+        <profile value="http://hl7.org.uk/CareConnect-Patient-1.structuredefinition.xml" />
       </type>
       <type>
         <code value="Reference" />
-        <profile value="http://hl7.org.uk/CareConnect-Patient-1" />
-        <aggregation value="referenced" />
+        <profile value="http://hl7.org.uk/CareConnect-Practitioner-1.structuredefinition.xml" />
       </type>
       <isSummary value="true" />
       <mapping>
@@ -6976,8 +6974,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="http://hl7.org.uk/CareConnect-Observation-1" />
-        <aggregation value="referenced" />
+        <profile value="http://hl7.org.uk/CareConnect-Observation-1.structuredefinition.xml" />
       </type>
       <mapping>
         <identity value="rim" />
@@ -8453,8 +8450,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="http://hl7.org.uk/CareConnect-Patient-1" />
-        <aggregation value="referenced" />
+        <profile value="http://hl7.org.uk/CareConnect-Patient-1.structuredefinition.xml" />
       </type>
       <isSummary value="true" />
       <mapping>
@@ -8565,12 +8561,11 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
+        <profile value="http://hl7.org.uk/CareConnect-Patient-1.structuredefinition.xml" />
       </type>
       <type>
         <code value="Reference" />
-        <profile value="http://hl7.org.uk/CareConnect-Patient-1" />
-        <aggregation value="referenced" />
+        <profile value="http://hl7.org.uk/CareConnect-Practitioner-1.structuredefinition.xml" />
       </type>
       <isSummary value="true" />
       <mapping>
@@ -9420,8 +9415,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="http://hl7.org.uk/CareConnect-Observation-1" />
-        <aggregation value="referenced" />
+        <profile value="http://hl7.org.uk/CareConnect-Observation-1.structuredefinition.xml" />
       </type>
       <mapping>
         <identity value="rim" />

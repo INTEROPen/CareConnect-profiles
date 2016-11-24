@@ -6,8 +6,8 @@
     <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
       <valueInteger value="1" />
     </extension>
-	<url value="http://hl7.org.uk/CareConnect-MedicationSupplyType-1-VS"/>
-	<name value="CareConnect-MedicationSupplyType-1-Valueset"/>
+	<url value="http://hl7.org.uk/CareConnect-MedicationSupplyType-1.valueset.xml"/>
+	<name value="CareConnect-MedicationSupplyType-1"/>
 	<status value="draft"/>
 	<publisher value="HL7 UK"/>
 	<description value="Indicates the legal/contractual nature of a prescription. This valueset references the vocabulary for EhrSupplyType in the NPfIT Message Implementation Manual 7.2.02."/>
