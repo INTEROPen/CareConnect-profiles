@@ -5038,7 +5038,7 @@
       <isSummary value="true" />
       <binding>
         <strength value="preferred" />
-        <valueSetUri value="http://hl7.org.uk/CareConnect-MedicationDosageRoute-1-VS" />
+        <valueSetUri value="http://hl7.org.uk/CareConnect-MedicationDosageRoute-1.valueset.xml" />
       </binding>
       <mapping>
         <identity value="v2" />
@@ -5587,7 +5587,7 @@
       <isSummary value="true" />
       <binding>
         <strength value="preferred" />
-        <valueSetUri value="http://hl7.org.uk/CareConnect-MedicationDosageMethod-1-VS" />
+        <valueSetUri value="http://hl7.org.uk/CareConnect-MedicationDosageMethod-1.valueset.xml" />
       </binding>
       <mapping>
         <identity value="v2" />
@@ -8809,7 +8809,7 @@
       <isSummary value="true" />
       <binding>
         <strength value="preferred" />
-        <valueSetUri value="http://hl7.org.uk/CareConnect-MedicationDosageRoute-1-VS" />
+        <valueSetUri value="http://hl7.org.uk/CareConnect-MedicationDosageRoute-1.valueset.xml" />
       </binding>
       <mapping>
         <identity value="v2" />
@@ -8996,7 +8996,7 @@
       <isSummary value="true" />
       <binding>
         <strength value="preferred" />
-        <valueSetUri value="http://hl7.org.uk/CareConnect-MedicationDosageMethod-1-VS" />
+        <valueSetUri value="http://hl7.org.uk/CareConnect-MedicationDosageMethod-1.valueset.xml" />
       </binding>
       <mapping>
         <identity value="v2" />
