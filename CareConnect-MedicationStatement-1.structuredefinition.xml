@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2016-11-24T21:26:21.486+00:00" />
+    <lastUpdated value="2016-11-24T22:36:30.159+00:00" />
   </meta>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
     <valueInteger value="1" />
@@ -2104,7 +2104,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/Organization" />
+        <profile value="http://hl7.org.uk/CareConnect-Organization-1.structuredefinition.xml" />
       </type>
       <isSummary value="true" />
       <mapping>
@@ -3147,7 +3147,7 @@
       </type>
       <type>
         <code value="Reference" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/Medication" />
+        <profile value="http://hl7.org.uk/CareConnect-Medication-1.structuredefinition.xml" />
       </type>
       <isSummary value="true" />
       <binding>
@@ -5857,6 +5857,36 @@
       </mapping>
     </element>
     <element>
+      <path value="MedicationStatement.identifier.assigner" />
+      <short value="Organization that issued id (may be just text)" />
+      <definition value="Organization that issued/manages the identifier." />
+      <comments value="The reference may be just a text description of the assigner." />
+      <min value="0" />
+      <max value="1" />
+      <base>
+        <path value="MedicationStatement.identifier.assigner" />
+        <min value="0" />
+        <max value="1" />
+      </base>
+      <type>
+        <code value="Reference" />
+        <profile value="http://hl7.org.uk/CareConnect-Organization-1.structuredefinition.xml" />
+      </type>
+      <isSummary value="true" />
+      <mapping>
+        <identity value="v2" />
+        <map value="CX.4 / (CX.4,CX.9,CX.10)" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="II.assigningAuthorityName but note that this is an improper use by the definition of the field.  Also Role.scoper" />
+      </mapping>
+      <mapping>
+        <identity value="servd" />
+        <map value="./IdentifierIssuingAuthority" />
+      </mapping>
+    </element>
+    <element>
       <path value="MedicationStatement.patient" />
       <short value="Who is/was taking  the medication" />
       <definition value="The person or animal who is/was taking the medication." />
@@ -6157,7 +6187,7 @@
       </type>
       <type>
         <code value="Reference" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/Medication" />
+        <profile value="http://hl7.org.uk/CareConnect-Medication-1.structuredefinition.xml" />
       </type>
       <isSummary value="true" />
       <binding>
