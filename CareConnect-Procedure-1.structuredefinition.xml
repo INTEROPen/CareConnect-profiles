@@ -3,8 +3,8 @@
   <meta>
     <lastUpdated value="2016-11-28T11:56:25.794+00:00" />
   </meta>
-  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm-no-warnings">
-    <valueInteger value="2" />
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1" />
   </extension>
   <url value="http://hl7.org.uk/CareConnect-Procedure-1.structuredefinition.xml" />
   <name value="CareConnect-Procedure-1" />
