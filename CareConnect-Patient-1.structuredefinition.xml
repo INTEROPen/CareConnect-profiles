@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2016-11-29T12:49:38.712+00:00" />
+    <lastUpdated value="2016-11-29T14:23:38.979+00:00" />
   </meta>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
     <valueInteger value="1" />
@@ -56,6 +56,29 @@
     </element>
     <element>
       <path value="Patient.extension" />
+      <name value="registrationDetails" />
+      <short value="Additional registration information for the Patient resource" />
+      <definition value="Optional Extensions Element - found in all resources." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org.uk/CareConnect-RegistrationDetails-1-Extension.structuredefinition.xml" />
+      </type>
+    </element>
+    <element>
+      <path value="Patient.extension" />
+      <name value="birthTime" />
+      <short value="The time of day that the patient was born. This includes the date to ensure that the time zone information can be communicated effectivley." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/patient-birthTime" />
+      </type>
+    </element>
+    <element>
+      <path value="Patient.extension" />
       <name value="ethnicCategory" />
       <short value="Ethnic category" />
       <definition value="The ethnicity of the subject." />
@@ -76,18 +99,6 @@
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org.uk/CareConnect-ReligiousAffiliation-1-Extension.structuredefinition.xml" />
-      </type>
-    </element>
-    <element>
-      <path value="Patient.extension" />
-      <name value="registrationDetails" />
-      <short value="Additional registration information for the Patient resource" />
-      <definition value="Optional Extensions Element - found in all resources." />
-      <min value="0" />
-      <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://hl7.org.uk/CareConnect-RegistrationDetails-1-Extension.structuredefinition.xml" />
       </type>
     </element>
     <element>
@@ -10278,6 +10289,29 @@
     </element>
     <element>
       <path value="Patient.extension" />
+      <name value="registrationDetails" />
+      <short value="Additional registration information for the Patient resource" />
+      <definition value="Optional Extensions Element - found in all resources." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org.uk/CareConnect-RegistrationDetails-1-Extension.structuredefinition.xml" />
+      </type>
+    </element>
+    <element>
+      <path value="Patient.extension" />
+      <name value="birthTime" />
+      <short value="The time of day that the patient was born. This includes the date to ensure that the time zone information can be communicated effectivley." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/patient-birthTime" />
+      </type>
+    </element>
+    <element>
+      <path value="Patient.extension" />
       <name value="ethnicCategory" />
       <short value="Ethnic category" />
       <definition value="The ethnicity of the subject." />
@@ -10298,18 +10332,6 @@
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org.uk/CareConnect-ReligiousAffiliation-1-Extension.structuredefinition.xml" />
-      </type>
-    </element>
-    <element>
-      <path value="Patient.extension" />
-      <name value="registrationDetails" />
-      <short value="Additional registration information for the Patient resource" />
-      <definition value="Optional Extensions Element - found in all resources." />
-      <min value="0" />
-      <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://hl7.org.uk/CareConnect-RegistrationDetails-1-Extension.structuredefinition.xml" />
       </type>
     </element>
     <element>
