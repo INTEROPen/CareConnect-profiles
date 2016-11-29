@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2016-11-24T23:25:33.034+00:00" />
+    <lastUpdated value="2016-11-29T11:10:38.503+00:00" />
   </meta>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
     <valueInteger value="1" />
   </extension>
   <url value="http://hl7.org.uk/CareConnect-Immunization-1.structuredefinition.xml" />
-  <version value="0.0.1" />
+  <version value="1.0" />
   <name value="CareConnect-Immunization-1" />
   <status value="draft" />
   <publisher value="HL7 UK" />
@@ -1895,7 +1895,7 @@
       <short value="The namespace for the identifier" />
       <definition value="Establishes the namespace in which set of possible id values is unique." />
       <requirements value="There are many sequences of identifiers.  To perform matching, we need to know what sequence we're dealing with. The system identifies a particular sequence or set of unique identifiers." />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <base>
         <path value="Immunization.identifier.system" />
@@ -1925,7 +1925,7 @@
       <short value="The value that is unique" />
       <definition value="The portion of the identifier typically displayed to the user and which is unique within the context of the system." />
       <comments value="If the value is a full URI, then the system SHALL be urn:ietf:rfc:3986." />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <base>
         <path value="Immunization.identifier.value" />
@@ -7589,6 +7589,66 @@
       <mapping>
         <identity value="w5" />
         <map value="id" />
+      </mapping>
+    </element>
+    <element>
+      <path value="Immunization.identifier.system" />
+      <short value="The namespace for the identifier" />
+      <definition value="Establishes the namespace in which set of possible id values is unique." />
+      <requirements value="There are many sequences of identifiers.  To perform matching, we need to know what sequence we're dealing with. The system identifies a particular sequence or set of unique identifiers." />
+      <min value="1" />
+      <max value="1" />
+      <base>
+        <path value="Immunization.identifier.system" />
+        <min value="0" />
+        <max value="1" />
+      </base>
+      <type>
+        <code value="uri" />
+      </type>
+      <exampleUri value="http://www.acme.com/identifiers/patient or urn:ietf:rfc:3986 if the Identifier.value itself is a full uri" />
+      <isSummary value="true" />
+      <mapping>
+        <identity value="v2" />
+        <map value="CX.4 / EI-2-4" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="II.root or Role.id.root" />
+      </mapping>
+      <mapping>
+        <identity value="servd" />
+        <map value="./IdentifierType" />
+      </mapping>
+    </element>
+    <element>
+      <path value="Immunization.identifier.value" />
+      <short value="The value that is unique" />
+      <definition value="The portion of the identifier typically displayed to the user and which is unique within the context of the system." />
+      <comments value="If the value is a full URI, then the system SHALL be urn:ietf:rfc:3986." />
+      <min value="1" />
+      <max value="1" />
+      <base>
+        <path value="Immunization.identifier.value" />
+        <min value="0" />
+        <max value="1" />
+      </base>
+      <type>
+        <code value="string" />
+      </type>
+      <exampleString value="123456" />
+      <isSummary value="true" />
+      <mapping>
+        <identity value="v2" />
+        <map value="CX.1 / EI.1" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="II.extension or II.root if system indicates OID or GUID (Or Role.id.extension or root)" />
+      </mapping>
+      <mapping>
+        <identity value="servd" />
+        <map value="./Value" />
       </mapping>
     </element>
     <element>
