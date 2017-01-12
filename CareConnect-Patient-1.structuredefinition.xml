@@ -130,10 +130,6 @@
       </type>
     </element>
     <element>
-      <path value="Patient.id" />
-      <short value="Logical id of this artifact. Must be populated with a globally unique identifier, except where resource is being sent to the server for creation when it must should not be populated" />
-    </element>
-    <element>
       <path value="Patient.identifier" />
       <slicing>
         <discriminator value="system" />

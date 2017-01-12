@@ -22,10 +22,6 @@
       </type>
     </element>
     <element>
-      <path value="Practitioner.id" />
-      <short value="Logical id of this artifact. Must be populated with a globally unique identifier, except where resource is being sent to the server for creation when it must NOT be populated" />
-    </element>
-    <element>
       <path value="Practitioner.identifier" />
       <slicing>
         <discriminator value="system" />
