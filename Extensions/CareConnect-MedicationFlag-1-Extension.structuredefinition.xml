@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-01-13T13:54:17.83+00:00" />
+    <lastUpdated value="2017-01-13T17:31:18.869+00:00" />
   </meta>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
     <valueInteger value="1" />
@@ -34,7 +34,7 @@
       <short value="MedicationFlag reference" />
       <type>
         <code value="Reference" />
-        <profile value="http://hl7.org.uk/CareConnect-MedicationFlag-1.structuredefinition.xml" />
+        <profile value="http://hl7.org.uk/CareConnect-Medication-Flag-1.structuredefinition.xml" />
         <aggregation value="referenced" />
       </type>
     </element>
